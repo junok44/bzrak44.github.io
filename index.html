@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>개인포트폴리오</title>
+    <script src="js/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+
+    <!-- aos 관련 코드 -->
+    <link rel="stylesheet" href="js/aos/aos.css">
+    <script src="js/aos/aos.js"></script>
+    <!-- lightbox2 참조 -->
+    <link rel="stylesheet" href="js/lightbox2/css/lightbox.css">
+    <script src="js/lightbox2/js/lightbox.js"></script>
+    <!-- swiper 참조 -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+
+    <!-- dotdotdot 참조 -->
+    <script src="js/jquery.dotdotdot.min.js"></script>
+
+    <!-- Progressbar 관련 -->
+    <script src="js/progressbar/progressbar.js"></script>
+
+    <!-- waypoint -->
+    <script src="js/counterup/waypoints.min.js"></script>
+    <!-- counterup -->
+    <script src="js/counterup/jquery.counterup.js"></script>
+
+    <!-- nicescroll.js -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- 딩벳폰트 참조 -->
+    <link rel="stylesheet" href="css/fontello/css/animation.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/script.js"></script>
+
+</head>
+
+<body id="home">
+
+
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container clearfix">
+                <a href="#home" class="logo move">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="gnb clearfix">
+                    <li><a href="#about-me" class="move">ABOUT ME</a></li>
+                    <li><a href="#redesign" class="move">WORK</a></li>
+                    <li><a href="#life" class="move">LIFE</a></li>
+                    <li><a href="#contact" class="move">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </header>
+        <!--// header -->
+
+        <!-- visual -->
+        <section class="visual">
+            <div class="container">
+                <img src="images/visual.jpg" alt="" class="visual-main">
+
+                <p class="visual-tit">
+                    <img src="images/visual-tit.jpg" alt="">
+                </p>
+                <div class="swiper-container sw-visual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/visual-img-1.jpg" alt="" class="visual-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/visual-img-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/visual-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// visual -->
+
+        <!-- profile -->
+        <section class="about-me" id="about-me">
+            <div class="container clearfix">
+                <h2 class="about-tit">About Me</h2>
+                <div class="about-main clearfix">
+                    <div class="about-left left">
+                        <img src="images/about-pic.jpg" alt="" class="about-pic">
+                        <span class="char-tit">CHARACTER</span>
+                        <ul class="char">
+                            <li>
+                                <span class="char-txt">참을성 & 끈기 (Persistence & Patience)</span>
+                                <div id="char_list1"></div>
+                            </li>
+                            <li>
+                                <span class="char-txt">의사소통 (Communication)</span>
+                                <div id="char_list2"></div>
+                            </li>
+                            <li>
+                                <span class="char-txt">책임감 & 성실성 (Responsibility & Consistent)</span>
+                                <div id="char_list3"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-right right">
+                        <img src="images/about-edu.jpg" alt="" class="about-edu">
+                        <img src="images/about-license.jpg" alt="" class="about-license">
+                        <img src="images/about-mbti.jpg" alt="" class="about-mbti">
+                        <div class="about-skill">
+                            <span class="about-skill-tit">SKILL</span>
+                            <ul class="skill-list clearfix">
+                                <li>
+                                    <div id="skill_html">
+                                        <span class="skill-name">HTML</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="skill_css">
+                                        <span class="skill-name">Css</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="skill_jquery">
+                                        <span class="skill-name">jQuery</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="skill_photoshop">
+                                        <span class="skill-name">Ps</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="skill_illust">
+                                        <span class="skill-name">Ai</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// profile -->
+        <!-- redesing -->
+        <section class="rede" id="redesign">
+            <div class="container clearfix">
+                <span class="rede-tit">Redesign</span>
+                <div class="swiper-container sw-rede">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="rede-1">
+                                <img src="images/rede-8sec.jpg" alt="">
+                                <div class="rede-button">
+                                    <a href="work/redesign-8seconds/process.html" target="_blank" class="bt-process">PROCESS</a>
+                                    <a href="work/redesign-8seconds/redesign.html" target="_blank" class="bt-redesign">REDESIGN</a>
+                                    <a href="https://www.ssfshop.com/8Seconds/main?brandShopNo=BDMA07A01&brndShopId=8SBSS" target="_blank" class="bt-original">ORIGINAL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rede-2">
+                                <img src="images/rede-lenovo.jpg" alt="">
+                                <div class="rede-button">
+                                    <a href="work/redesign-lenovo/process.html" target="_blank" class="bt-process">PROCESS</a>
+                                    <a href="work/redesign-lenovo/redesign.html" target="_blank" class="bt-redesign">REDESIGN</a>
+                                    <a href="https://www.lenovo.com/kr/ko/pc" target="_blank" class="bt-original">ORIGINAL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+
+                        </div>
+                        <div class="swiper-slide">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rede-bot">
+                    <a href="#" class="rede-bot-list-1">
+                        <img src="images/rede-bot-list-1.jpg" alt="">
+                    </a>
+                    <a href="#" class="rede-bot-list-2">
+                        <img src="images/rede-bot-list-2.jpg" alt="">
+                    </a>
+                    <a href="#" class="rede-bot-list-1">
+                        <img src="images/rede-bot-list-1.jpg" alt="">
+                    </a>
+                    <a href="#" class="rede-bot-list-2">
+                        <img src="images/rede-bot-list-2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--// redesing -->
+        <!-- publshing -->
+        <section class="publ" id="publishing">
+            <div class="container">
+                <span class="publ-tit">Publishing</span>
+                <div class="swiper-container sw-publ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="publ-1">
+                                <img src="images/publ-cubeme.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/cubeme/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/cubeme/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="https://www.cubeme.co.kr/main.do" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="publ-2">
+                                <img src="images/publ-stx.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/stxconst/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/stxconst/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="http://www.stxconst.co.kr/" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="publ-3">
+                                <img src="images/publ-sidiz.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/sidiz/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/sidiz/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="https://www.sidiz.com/" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="publ-4">
+                                <img src="images/publ-hansalim.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/hansalim/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/hansalim/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="publ-5">
+                                <img src="images/publ-pulmuone-water.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/pulmuonewater/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/pulmuonewater/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="https://www.pulmuonewater.com/" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="publ-6">
+                                <img src="images/publ-nexus.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/nexus/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/nexus/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="https://nexus-official.com/" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="publ-6">
+                                <img src="images/publ-greenjuice.jpg" alt="">
+                                <p class="publ-button">
+                                    <a href="work/greenjuice/index.html" target="_blank" class="bt-git">GIT HUB</a>
+                                    <a href="work/greenjuice/index.html" target="_blank" class="bt-publ">PUBLISHING</a>
+                                    <a href="https://greenjuice.pulmuone.com/" target="_blank" class="bt-original">ORIGINAL</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="publ-bot">
+                    <div class="swiper-container sw-publ-bot">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/publ-bot-list-7.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </section>
+        <!--// publshing -->
+
+        <!-- etc -->
+        <section class="etc" id="etc">
+            <div class="container">
+                <span class="etc-tit">Other Work</span>
+                <div class="etc-work">
+                    <ul class="etc-work-top clearfix">
+                        <li>
+                            <span class="work-tit">01 포스터 디자인</span>
+                            <a href="#"><img src="images/work-1.jpg" alt=""></a>
+                            <span class="work-name">바디로션</span>
+                            <span class="work-sub-name">Product Promotion</span>
+                        </li>
+                        <li>
+                            <span class="work-tit">01 포스터 디자인</span>
+                            <a href="#"><img src="images/work-1.jpg" alt=""></a>
+                            <span class="work-name">바디로션</span>
+                            <span class="work-sub-name">Product Promotion</span>
+                        </li>
+                        <li>
+                            <span class="work-tit">01 포스터 디자인</span>
+                            <a href="#"><img src="images/work-1.jpg" alt=""></a>
+                            <span class="work-name">바디로션</span>
+                            <span class="work-sub-name">Product Promotion</span>
+                        </li>
+                    </ul>
+                    <ul class="etc-work-bot clearfix">
+                        <li>
+                            <span class="work-tit">01 포스터 디자인</span>
+                            <a href="#"><img src="images/work-1.jpg" alt=""></a>
+                            <span class="work-name">바디로션</span>
+                            <span class="work-sub-name">Product Promotion</span>
+                        </li>
+                        <li>
+                            <span class="work-tit">01 포스터 디자인</span>
+                            <a href="#"><img src="images/work-1.jpg" alt=""></a>
+                            <span class="work-name">바디로션</span>
+                            <span class="work-sub-name">Product Promotion</span>
+                        </li>
+                        <li>
+                            <span class="work-tit">01 포스터 디자인</span>
+                            <a href="#"><img src="images/work-1.jpg" alt=""></a>
+                            <span class="work-name">바디로션</span>
+                            <span class="work-sub-name">Product Promotion</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--// etc -->
+
+        <!-- life -->
+        <section class="life" id="life">
+            <div class="container">
+                <span class="life-tit">Life</span>
+                <span class="life-list">
+                    <img src="images/life-1.jpg" alt="" data-aos="fade-left"  data-aos-duration="3000">
+                </span>
+                <span class="life-list">
+                    <img src="images/life-2.jpg" alt="" data-aos="fade-right"  data-aos-duration="3000">
+                </span>
+                <span class="life-list">
+                    <img src="images/life-3.jpg" alt="" data-aos="fade-left">
+                </span>
+                <span class="life-list">
+                    <img src="images/life-4.jpg" alt="" data-aos="fade-right">
+                </span>
+            </div>
+        </section>
+        <!--// life -->
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+
+            </div>
+        </section>
+        <!--// contact -->
+
+    </div>
+</body>
+
+</html>
