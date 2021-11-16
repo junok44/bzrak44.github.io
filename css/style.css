@@ -135,7 +135,6 @@ body {
     z-index: 999;
     left: 0;
     right: 0;
-    opacity: 1;
 
 }
 
@@ -145,17 +144,31 @@ body {
 }
 
 .header-active {
-    opacity: 0;
-    transition: opacity 0.5s;
+    background-color: rgba(0,0,0,0.8);
+    transition: background 0.5s;
 }
 
+
+.header-active .gnb li a {
+    color: #fff;
+}
 .logo {
     position: absolute;
-    top: 0;
     left: 0;
-    top: calc(50% + -5px);
+    top: 1.2rem;
     float: left;
+    background:url('../images/logo.png') no-repeat center;
+    background-size: 100%;
+    width: 5.5rem;
+    height: 6.5rem;
 }
+
+.header-active .logo {
+    background:url('../images/logo2.png') no-repeat center;
+    background-size: 100%;
+}
+
+
 
 .logo img {
     width: 5rem;
@@ -168,7 +181,10 @@ body {
     position: relative;
     bottom: 0;
     float: right;
-    padding-top: 5.5rem;
+    padding-top: 3.1rem;
+}
+.gnb-active {
+    color: #fff;
 }
 
 .gnb>li {
@@ -644,6 +660,9 @@ body {
 .etc-work img {
     padding-top: 4.4rem;
     padding-bottom: 1.9rem;
+    width: 36.8rem;
+    height: 36.8rem;
+    object-fit: cover;
 }
 
 .work-name {

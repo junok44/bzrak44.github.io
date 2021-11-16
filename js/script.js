@@ -8,10 +8,9 @@ $(document).ready(function () {
     // });
 
     // 주메뉴 fadeout
-    let header = $('.header .container');
+    let header = $('.header');
     $(window).scroll(function () {
         let scrollbar = $(window).scrollTop();
-        console.log(scrollbar);
         // console.log(scrollbar);
         if (scrollbar > 100) {
             header.addClass('header-active');
@@ -19,6 +18,7 @@ $(document).ready(function () {
             header.removeClass('header-active');
         }
     });
+
     // 주메뉴 이동
     var moveEl = $('.move');
     $.each(moveEl, function () {
@@ -87,6 +87,14 @@ $(document).ready(function () {
     let sw_rede = new Swiper(".sw-rede", {
         effect: "fade",
     });
+
+    let rede_bot_a = $('.rede-bot a');
+    $.each(rede_bot_a, function (index, item) {
+        $(this).click(function (e) {
+            e.preventDefault();
+            sw_rede.slideTo(index)
+        });
+    });
     // 퍼블리싱 슬라이드
     let sw_publ = new Swiper('.sw-publ', {
         effect: "fade",
@@ -97,9 +105,19 @@ $(document).ready(function () {
         spaceBetween: 32,
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 3000,
             disableOnInteraction: false,
+
         },
+    });
+    let publ_bot_a = $('.sw-publ-bot-slide a');
+    $.each(publ_bot_a, function (index, item) {
+        $(this).click(function (e) {
+            e.preventDefault();
+            let temp = $(this).find('img').attr('date-index');
+            temp = parseInt(temp) + 1;
+            sw_publ.slideTo(temp)
+        });
     });
 
     // // 말줄임 적용 (...)
@@ -366,6 +384,10 @@ $(document).ready(function () {
         }
 
     });
+    // 브라우저 고정
+
+    // etc
+    $('.gallery-item a').colorbox();
 
     // $('.count').counterUp({
     //     delay: 10,
@@ -391,6 +413,8 @@ $(document).ready(function () {
     // });
 
 });
+
+
 
 window.onload = function () {
     AOS.init();
