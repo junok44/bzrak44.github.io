@@ -53,7 +53,29 @@ $(document).ready(function () {
     }, {
         offset: '100%'
     });
+    // 비주얼이동
+    var move_visual = $('.move-visual');
+    $.each(move_visual, function () {
+        $(this).click(function (e) {
+            // href 를 일단 막아서 위치이동 못하게함.
+            e.preventDefault();
+            // 가야하는 곳의 위치를 파악한다.
+            var tg = $(this).attr('href');
+            var num;
+            // 혹시 #아이디 가 없다면
+            if (tg == '#') {
+                num = 0;
+            } else {
+                // 어느 만큼 이동해야 하는 지를 숫자로 파악한다.
+                num = $(tg).offset().top;
+            }
 
+            // 움직이자
+            $('html, body').stop().animate({
+                scrollTop: num
+            }, 800);
+        });
+    });
 
     $('.visual-img').waypoint(function (dir) {
         if (dir == "down") {
@@ -66,8 +88,9 @@ $(document).ready(function () {
     });
     let sw_visual = new Swiper('.sw-visual', {
         effect: "fade",
+        loop:true,
         autoplay: {
-            delay: 1500,
+            delay: 2000,
         },
     });
 
@@ -86,6 +109,7 @@ $(document).ready(function () {
     // 리디자인 슬라이드
     let sw_rede = new Swiper(".sw-rede", {
         effect: "fade",
+        // loop: true,
     });
 
     let rede_bot_a = $('.rede-bot a');
