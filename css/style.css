@@ -48,12 +48,12 @@ html {
 
 /* 스크롤바의 width */
 ::-webkit-scrollbar-track {
-    background-color: #619ab4;
+    background-color: #eee;
 }
 
 /* 스크롤바의 전체 배경색 */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #1697bf, #62b7ac);
+    background: linear-gradient(to bottom, #cad9ef, #8eb5ef);
 }
 
 /* 스크롤바 색 */
@@ -234,13 +234,8 @@ body {
 
 .visual-main {
     width: 100%;
-    /* opacity: 0;
-    transition: opacity 0.5s; */
 }
 
-/* .visual-main-active {
-    opacity: 1;
-} */
 
 .visual-tit {
     position: absolute;
@@ -261,12 +256,6 @@ body {
     width: 52.5rem;
     height: 29.7rem;
 }
-
-
-
-
-
-
 
 /* profile */
 .about-me {
